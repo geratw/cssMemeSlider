@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(61, 60, 60);
+  overflow: hidden;
+}
+
+html {
+  overflow: hidden;
+}
+
+.slider {
+  width: 1100px;
+  height: 700px;
+  overflow: hidden;
+}
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.controls {
+  position: absolute;
+  bottom: 17%;
+  left: 90%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.bar {
+  height: 12px;
+  width: 12px;
+  margin: 6px;
+  cursor: pointer;
+  background-color: #4682b4;
+  border: 0.1rem solid #4682b4;
+  opacity: 0.8;
+  border-radius: 50%;
+  transition: all 0.4s ease;
+}
+
+.bar:hover {
+  background-color: #ffffff;
+  border: 0.1rem solid #ffffff;
+}
+
+input[name="point"] {
+  position: absolute;
+  visibility: hidden;
+}
+
+.slides {
+  width: 400%;
+  height: 100%;
+  display: flex;
+}
+
+.item{
+  height: 370px;
+
+}
+
+.slide {
+  position: relative;
+  width: 25%;
+  transition: all 0.6s ease;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1em;
+}
+
+figure {
+  display: inline-block;
+  border-radius: 12px;
+  padding: 10px;
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+}
+
+figcaption {
+  margin-top: 8px;
+  color: rgb(255, 255, 255);
+  text-align: left;
+  font-size: 26px;
+}
+
+#slide1:checked ~ .s1 {
+  margin-left: 0%;
+}
+
+#slide2:checked ~ .s1 {
+  margin-left: -25%;
+}
+
+#slide3:checked ~ .s1 {
+  margin-left: -50%;
+}
+
+#slide4:checked ~ .s1 {
+  margin-left: -75%;
+}
+
+#slide5:checked ~ .s1 {
+  margin-left: -100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .slider {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  figcaption {
+    font-size: 20px;
+  }
+}
