@@ -37,7 +37,7 @@ body {
   border: 0.1rem solid #4682b4;
   opacity: 0.8;
   border-radius: 50%;
-  transition: all 0.4s ease;
+ 
 }
 
 .bar:hover {
@@ -78,8 +78,8 @@ input[name="point"] {
 
 figure {
   display: inline-block;
-  border-radius: 12px;
-  padding: 10px;
+  border-radius: 1em;
+  padding: 1em;
   width: 90%;
   position: absolute;
   top: 50%;
