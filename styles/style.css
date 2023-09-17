@@ -37,7 +37,6 @@ body {
   border: 0.1rem solid #4682b4;
   opacity: 0.8;
   border-radius: 50%;
- 
 }
 
 .bar:hover {
@@ -58,6 +57,7 @@ input[name="point"] {
 
 .item {
   height: 18em;
+  padding: 0;
 }
 
 .slide {
@@ -111,10 +111,6 @@ figcaption {
   margin-left: -75%;
 }
 
-#slide5:checked ~ .s1 {
-  margin-left: -100%;
-}
-
 @media screen and (max-width: 1024px) {
   .slider {
     width: 100%;
@@ -126,4 +122,24 @@ figcaption {
   figcaption {
     font-size: 20px;
   }
+}
+
+/* При активации slide1 */
+#slide1:checked ~ .controls .bar[for="slide1"] {
+  background-color: black;
+}
+
+/* При активации slide2 */
+#slide2:checked ~ .controls .bar[for="slide2"] {
+  background-color: black;
+}
+
+/* При активации slide3 */
+#slide3:checked ~ .controls .bar[for="slide3"] {
+  background-color: black;
+}
+
+/* При активации slide4 */
+#slide4:checked ~ .controls .bar[for="slide4"] {
+  background-color: black;
 }
