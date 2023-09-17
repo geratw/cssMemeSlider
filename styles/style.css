@@ -26,7 +26,6 @@ body {
   left: 88%;
   transform: translateX(-50%);
   display: flex;
-
 }
 
 .bar {
@@ -125,22 +124,18 @@ figcaption {
   }
 }
 
-/* При активации slide1 */
 #slide1:checked ~ .controls .bar[for="slide1"] {
   background-color: black;
 }
 
-/* При активации slide2 */
 #slide2:checked ~ .controls .bar[for="slide2"] {
   background-color: black;
 }
 
-/* При активации slide3 */
 #slide3:checked ~ .controls .bar[for="slide3"] {
   background-color: black;
 }
 
-/* При активации slide4 */
 #slide4:checked ~ .controls .bar[for="slide4"] {
   background-color: black;
 }
